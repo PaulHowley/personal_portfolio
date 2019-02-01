@@ -14,18 +14,6 @@
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
 
-<%= link_to "Edit", edit_article_path(@article) %>
-
-<br>
-
-<%= link_to 'Delete', article_path(@article),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %>
-
 <br>
 
 <%= link_to 'Back to article list', articles_path %>
-
-<br>
-
-<%= link_to 'Back to home page', welcome_index_path %>

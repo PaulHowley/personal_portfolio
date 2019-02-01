@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
-
- resources :articles do
-  resources :comments
- end
-
-  namespace :admin do
-    resources :articles, :comments
+  root 'articles#index'
+  resources :articles do
+    resources :comments
   end
 
-  root 'welcome#index'
+  namespace :admin do
+    root 'articles#index'
+    resources :articles
+  end
+
+  get 'articles/show'
+
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
