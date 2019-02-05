@@ -1,13 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Article, type: :model do
-  feature 'admin creates an article' do
-
-    scenario 'they see the article on the page' do
-      visit new_admin_article_path
+    subject do 
+      described_class.new(title: "Anything", text: "Lorem ipsum")
     end
-
-  subject {described_class.new(title: "Anything", text: "Lorem ipsum")}
 
     it "is valid with valid attributes" do
       expect(subject).to be_valid
