@@ -1,0 +1,3 @@
+require 'capybara/rspec'
+
+# configuration piece here....

@@ -1,5 +1,5 @@
 class Article < ApplicationRecord
-  validates :title, presence: true
-  validates :text, presence: true
+  validates :title, :text, presence: true
+
   has_many :comments, dependent: :destroy
 end
