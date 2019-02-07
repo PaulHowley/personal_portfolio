@@ -29,27 +29,37 @@ RSpec.feature "Articles", type: :feature do
   end
 
   context 'edit article' do
+
     scenario "should be successful" do
-      article = Article.create(title: 'title', text: 'text') # Use factory bot here, use a let block
-      visit edit_articles_path(article)
-      within("form") do
-        fill_in 'Title', with: 'title'
-        fill_in 'Text', with: 'text'
+      # Prepare
+      let!(article) do
+        create(:article)
       end
+       # Use factory bot here, use a let block
+      visit edit_admin_article_path(article)
+
+      within("form") do
+        fill_in 'Title', with: 'unique title'
+        fill_in 'Text', with: 'unique text'
+      end
+
+      #Act
       click_button 'Update Article'
-      # not sure what to insert here.. it redirects to articles list with the updates applied.
-      #expect(page).to 
+
+      # Assert
+      expect(page).to have_content('unique title unique text')
+      end
     end
   end
 
-  context 'delete article' do
-    scenario "should be successful", js: true do
-      article = Article.create(title: 'title', text: 'text')
-      visit admin_articles_path
-      click_button 'Delete' # could an article count be applied here?
-      # again what to apply here - it gives a pop up confirmation then redirects to the article list.
-      #expect(page).to
-    end
-  end
+  # context 'delete article' do
+  #   scenario "should be successful", js: true do
+  #     article = Article.create(title: 'title', text: 'text')
+  #     visit admin_articles_path
+  #     click_button 'Delete' # could an article count be applied here?
+  #     # again what to apply here - it gives a pop up confirmation then redirects to the article list.
+  #     #expect(page).to
+  #   end
+  # end
   
-end
+#end
