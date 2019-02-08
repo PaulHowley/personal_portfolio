@@ -52,7 +52,7 @@ RSpec.feature "Articles", type: :feature do
   # need chromium/selenium for this to work as uses javascript, also configuration in the capybara support file.
   context 'delete article' do 
     let(:article) do
-      create(:article)
+      create(:article, title = 'unique title')
     end
     scenario "should be successful", js: true do
       #Prepare
@@ -61,7 +61,8 @@ RSpec.feature "Articles", type: :feature do
       #click_link 'Delete'
 
       #Assert
-      expect {click_link 'Delete'}.to change(Article, :count).by(-1)
+      expect(page).not_to have_content('unique title')
+      #expect {:destroy}.to change(Article, :count).by(-1)
       
     end
   end
