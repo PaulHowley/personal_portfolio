@@ -1,16 +1,19 @@
-<h1>Personal Portfolio</h1>
-<p>This is a personal portfolio website built with Ruby on Rails.  The aim being to showcase my coding skills and knowledge achieved throughout the Procoders course.</p>
-
-<div class="row">
-  <div class="col-sm-8 blog-main">
-    <p><strong><%= @article.title %></strong></p>
-    <hr>
-    <p><%= @article.text %></p>
-            
-<nav>
-  <button type="button" class="btn btn-outline-primary"><%= link_to "Edit", edit_admin_article_path(@article) %></button>
-  <button type="button" class="btn btn-outline-primary"><%= link_to 'Delete', admin_article_path(@article),
+<main class="container-fluid bg-light">
+  <div class="row">
+    <div class="col-sm-12 blog-main">
+      <p><strong><%= @article.title %></strong></p>
+      <hr>
+      <p><%= @article.text %></p>
+    </div>
+  </div>
+</main>
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+  <div class="navbar-nav">
+    <button type="button" class="nav-item btn btn-outline-secondary"><%= link_to "Edit", edit_admin_article_path(@article) %></button>
+    <button type="button" class="nav-item btn btn-outline-secondary"><%= link_to 'Delete', admin_article_path(@article),
                                                                               method: :delete,
                                                                               data: { confirm: 'Are you sure?' } %></button>
-  <button type="button" class="btn btn-outline-primary"><%= link_to 'Back to article list', admin_articles_path %></button>
+    <button type="button" class="nav-item btn btn-outline-secondary"><%= link_to 'Back to article list', admin_articles_path %></button>
+  </div>
 </nav>
+

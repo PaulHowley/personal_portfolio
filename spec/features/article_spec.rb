@@ -29,13 +29,11 @@ RSpec.feature "Articles", type: :feature do
   end
 
   context 'edit article' do
-
+    let(:article) do
+      create(:article)
+    end
     scenario "should be successful" do
       # Prepare
-      let!(article) do
-        create(:article)
-      end
-       # Use factory bot here, use a let block
       visit edit_admin_article_path(article)
 
       within("form") do
@@ -49,17 +47,23 @@ RSpec.feature "Articles", type: :feature do
       # Assert
       expect(page).to have_content('unique title unique text')
       end
-    end
   end
 
-  # context 'delete article' do
-  #   scenario "should be successful", js: true do
-  #     article = Article.create(title: 'title', text: 'text')
-  #     visit admin_articles_path
-  #     click_button 'Delete' # could an article count be applied here?
-  #     # again what to apply here - it gives a pop up confirmation then redirects to the article list.
-  #     #expect(page).to
-  #   end
-  # end
+  # need chromium/selenium for this to work as uses javascript, also configuration in the capybara support file.
+  context 'delete article' do 
+    let(:article) do
+      create(:article)
+    end
+    scenario "should be successful", js: true do
+      #Prepare
+      visit admin_articles_path
+      #Act
+      #click_link 'Delete'
+
+      #Assert
+      expect {click_link 'Delete'}.to change(Article, :count).by(-1)
+      
+    end
+  end
+end
   
-#end
