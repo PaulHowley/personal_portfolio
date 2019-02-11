@@ -1,32 +1,11 @@
-<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse row justify-content-between" id="navbarNavAltMarkup">
-    <div class="navbar-nav col-md-4">
-      <a class="nav-item nav-link active" href="/admin">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="/articles">User Index</a>
-      <a class="nav-item nav-link" href="/admin/articles">Articles</a>
-    </div>
-  <div class="navbar-nav col-auto">
-    <button type="button" class="btn btn-outline-secondary"><%= link_to 'New article', new_admin_article_path %></button>
-  </div>
-</nav>
-
-<header class="col bg-secondary">
-  <h1 class="text-white">Personal Portfolio</h1>
-    <p class="text-black-50">This is my personal portfolio website built with Ruby on Rails.  The aim being to showcase my coding skills and knowledge achieved throughout the Procoders course.</p>
-</header> -->
-<main class="container-fluid bg-light">
+<main class='container-fluid bg-light'>
   <h3>Articles Listing</h3>
   
-  <div class="table-responsive">
-    <table class="table table-bordered table-hover">
-      <thead class="thead-light">
+  <div class='table-responsive'>
+    <table class='table table-bordered table-hover'>
+      <thead class='thead-light'>
         <tr>
           <th>Title</th>
-          <th>Text</th>
-          <th>View</th>
           <th>Edit</th>
           <th>Delete</th>
         </tr>
@@ -34,50 +13,22 @@
       <tbody>
         <% @articles.each do |article| %>
           <tr>
-            <td><%= article.title %></td>
-            <td><%= article.text %></td>
-            <td><button type="button" class="btn btn-outline-secondary"><%= link_to 'View', admin_article_path(article) %></button></td>
-            <td><button type="button" class="btn btn-outline-secondary"><%= link_to 'Edit', edit_admin_article_path(article) %></button></td>
-            <td><button type="button" class="btn btn-outline-secondary"><%= link_to 'Delete', admin_article_path(article),
+            <td><%= link_to article.title, admin_article_path(article), class: 'btn btn-primary' %></td>
+            <td><%= link_to 'Edit', edit_admin_article_path(article), class: 'btn btn-warning' %></td>
+            <td><%= link_to 'Delete', admin_article_path(article),
                     method: :delete,
-                    data: { confirm: 'Are you sure?' } %></button></td>
+                    class: 'btn btn-danger',
+                    data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
   </div>
 </main>
-  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-  <div class="navbar-nav col-auto">
-    <button type="button" class="btn btn-outline-secondary"><%= link_to 'New article', new_admin_article_path %></button>
+  <nav class='navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark'>
+  <div class='navbar-nav col-auto'>
+    <%= link_to 'New article', new_admin_article_path, class: 'btn btn-success' %>
   </div>
 </nav>
 
 
-<!--<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/admin">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/articles">User Index</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/admin/articles">Articles</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav navbar-right">
-          <li class="nav-item">
-            <a class="nav-link" href="">Welcome Paul <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Log Out</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>-->

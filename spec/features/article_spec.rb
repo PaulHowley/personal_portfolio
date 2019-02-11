@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 RSpec.feature "Articles", type: :feature do
+  include AuthHelper
+    before(:each) do
+      http_login
+    end
+
   context 'create new article' do
     scenario "with valid data" do
       # Prepare
@@ -51,19 +56,18 @@ RSpec.feature "Articles", type: :feature do
 
   # need chromium/selenium for this to work as uses javascript, also configuration in the capybara support file.
   context 'delete article' do 
-    let(:article) do
-      create(:article, title = 'unique title')
-    end
+    let!(:article) { create(:article) }
+
     scenario "should be successful", js: true do
       #Prepare
       visit admin_articles_path
+
       #Act
-      #click_link 'Delete'
+      click_link 'Delete'
+      page.driver.browser.switch_to.alert.accept
 
       #Assert
-      expect(page).not_to have_content('unique title')
-      #expect {:destroy}.to change(Article, :count).by(-1)
-      
+      expect(page).not_to have_content(article.title)
     end
   end
 end

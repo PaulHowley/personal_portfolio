@@ -1,7 +1,7 @@
-<div class="container-fluid new-container bg-light">
+<div class='container-fluid new-container bg-light'>
   <h1>New Article</h1>
 
   <%= render 'form' %>
 
-  <button class="btn btn-outline-secondary"><%= link_to 'Back', admin_articles_path %></button>
+  <%= link_to 'Back', admin_articles_path, class:'btn btn-primary' %>
 </div>

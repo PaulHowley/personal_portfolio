@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
     <title>PersonalPortfolio</title>
     <%= csrf_meta_tags %>
@@ -8,24 +8,19 @@
     <%= stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <body class='bg-light'>
+    <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
+      <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
+      <span class='navbar-toggler-icon'></span>
       </button>
-      <div class="collapse navbar-collapse row justify-content-between" id="navbarNavAltMarkup">
-        <div class="navbar-nav col-md-4">
-          <a class="nav-item nav-link active" href="/admin">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="/articles">User Index</a>
-          <a class="nav-item nav-link" href="/admin/articles">Articles</a>
+      <div class='collapse navbar-collapse row justify-content-between' id='navbarNavAltMarkup'>
+        <div class='navbar-nav col-md-4'>
+          <a class='nav-item nav-link active' href='/admin'>Home <span class='sr-only'>(current)</span></a>
+          <a class='nav-item nav-link' href='/articles'>User Index</a>
+          <a class='nav-item nav-link' href='/admin/articles'>Articles</a>
         </div>
       </div>
     </nav>
-
-    <header class="col bg-secondary">
-      <h1 class="text-white">Personal Portfolio</h1>
-      <p class="text-black">This is my personal portfolio website built with Ruby on Rails.  The aim being to showcase my coding skills and knowledge achieved throughout the Procoders course.</p>
-    </header>
 
     <%= yield %>
 
