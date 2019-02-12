@@ -8,6 +8,7 @@ class Admin::ArticlesController < Admin::ApplicationController
     
     if @article.save
       redirect_to admin_articles_path
+      flash.notice = 'You have successfully created a new article!'
     else
       render 'new'
     end
@@ -29,6 +30,7 @@ class Admin::ArticlesController < Admin::ApplicationController
     @article = Article.find(params[:id])
    
     if @article.update(article_params)
+      flash.notice = 'Article updated successfully!'
       redirect_to admin_articles_path
     else
       render 'edit'
@@ -38,7 +40,7 @@ class Admin::ArticlesController < Admin::ApplicationController
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-   
+    flash.notice = "You have successfully deleted the article!"
     redirect_to admin_articles_path
   end
 
