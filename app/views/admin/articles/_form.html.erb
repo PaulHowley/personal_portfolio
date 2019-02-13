@@ -1,6 +1,6 @@
 <%= form_for [:admin, @article] do |form| %>
  
-  <%= render 'errors' %>
+  <%= render partial: 'shared/errors', locals: {obj: @article} %>
  
   <div class='form-group'>
     <%= form.label :title %>

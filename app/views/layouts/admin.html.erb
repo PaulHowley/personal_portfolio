@@ -21,8 +21,11 @@
         </div>
       </div>
     </nav>
-
-    <p class="flash"><%= flash.alert %></p>
+    
+    <div class="alert alert-success" role="alert">
+      <%= flash.notice %>
+    </div>
+    
     <%= yield %>
 
   </body>
