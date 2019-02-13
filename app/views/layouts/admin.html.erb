@@ -22,7 +22,9 @@
       </div>
     </nav>
     
-    <%= flash.notice %>
+    <% if flash[:notice] %>
+      <div class="notice alert alert-success" role="alert""><%= flash[:notice] %></div>
+    <% end %>
   
     <%= yield %>
 
