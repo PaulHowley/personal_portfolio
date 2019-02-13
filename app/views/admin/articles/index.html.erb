@@ -1,6 +1,6 @@
 <main class='container-fluid bg-light'>
   <h3>Articles Listing</h3>
-  
+  <div class='new-article'><%= link_to 'New article', new_admin_article_path, class: 'btn btn-success' %></div>
   <div class='table-responsive'>
     <table class='table table-bordered table-hover'>
       <thead class='thead-light'>
@@ -24,11 +24,7 @@
       </tbody>
     </table>
   </div>
+  <%= link_to 'New article', new_admin_article_path, class: 'btn btn-success' %>
 </main>
-  <nav class='navbar navbar-bottom navbar-expand-sm navbar-dark bg-dark'>
-  <div class='navbar-nav col-auto'>
-    <%= link_to 'New article', new_admin_article_path, class: 'btn btn-success' %>
-  </div>
-</nav>
 
 
