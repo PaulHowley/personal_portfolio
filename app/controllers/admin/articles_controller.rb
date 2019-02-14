@@ -7,7 +7,7 @@ class Admin::ArticlesController < Admin::ApplicationController
     @article = Article.new(article_params)
     
     if @article.save
-      redirect_to admin_articles_path, :status=> :found, :notice => 'You have successfully created a new article!'
+      redirect_to admin_articles_path, status: :created, notice: 'You have successfully created a new article!'
       
     else
       render 'new'
@@ -30,7 +30,7 @@ class Admin::ArticlesController < Admin::ApplicationController
     @article = Article.find(params[:id])
    
     if @article.update(article_params)
-      redirect_to admin_articles_path, :status=> :found, :notice => 'Article updated successfully!'
+      redirect_to admin_articles_path, status: :ok, notice: 'Article updated successfully!'
     else
       render 'edit'
     end
@@ -39,7 +39,7 @@ class Admin::ArticlesController < Admin::ApplicationController
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-    redirect_to admin_articles_path, :status=> :found, :notice =>  "You have successfully deleted the article!"
+    redirect_to admin_articles_path, status: :found, notice:  "You have successfully deleted the article!"
   end
 
   private
