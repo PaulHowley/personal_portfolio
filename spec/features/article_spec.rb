@@ -50,7 +50,7 @@ require 'rails_helper'
         click_button 'Update Article'
 
         # Assert
-        expect(page).to have_content('unique title unique text')
+        expect(page).to have_content('unique title')
       end
     end
 
