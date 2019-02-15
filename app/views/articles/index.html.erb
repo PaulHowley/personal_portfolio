@@ -1,0 +1,20 @@
+<h1>Listing articles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th colspan="2">Text</th>
+    </tr>
+  </thead>
+ 
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.text %></td>
+        <td><%= link_to 'View', article_path(article) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
