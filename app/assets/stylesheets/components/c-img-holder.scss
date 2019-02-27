@@ -1,0 +1,23 @@
+.c-img-holder {
+  margin: 5px auto;
+  padding: 5px;
+  text-align: center;
+  &__img {
+    max-height: 200px;
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width : 330px) {
+  .c-img-holder__img {
+    max-height: 500px;
+    max-width: 500px;
+  }
+} 
+
+@media only screen and (min-width : 720px) {
+  .c-img-holder__img {
+    max-height: 800px;
+    max-width: 700px;
+  }
+} 

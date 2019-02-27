@@ -1,12 +1,12 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
-
-
-<%= link_to 'Back to article list', articles_path %>
+<div class="c-container">
+  <%= render 'shared/nav'%>
+  <div class="c-img-holder">
+    <%= image_tag("bg-desk.jpg", alt: "article-img", class: "c-img-holder__img" )%>
+  </div>
+  <div class="c-article-container">
+    <h2 class="c-article-container__title "><%= @article.title %></h2>
+    <p class="c-article-container__text"><%= @article.text %></p>
+  </div>
+  <%= link_to 'Articles list', articles_path, class: "c-articles-btn" %>
+  <%= render 'shared/footer'%>
+</div>
