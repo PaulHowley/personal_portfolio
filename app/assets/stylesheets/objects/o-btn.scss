@@ -1,0 +1,20 @@
+.o-btn {
+  display: flex;
+  border-radius: 2px;
+  max-width: 120px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  font-family: $link-font;
+  color:  white;
+  cursor: pointer;
+  text-shadow: 1px 1px black;
+  box-shadow: 1px  1px gray;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+
+

@@ -8,14 +8,14 @@
   }
 }
 
-@media only screen and (min-width : 330px) {
+@media only screen and (min-width: $breakpoint-mob) {
   .c-img-holder__img {
     max-height: 500px;
     max-width: 500px;
   }
 } 
 
-@media only screen and (min-width : 720px) {
+@media only screen and (min-width: $breakpoint-tablet) {
   .c-img-holder__img {
     max-height: 800px;
     max-width: 700px;

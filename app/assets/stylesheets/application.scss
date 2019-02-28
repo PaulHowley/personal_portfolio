@@ -1,4 +1,4 @@
-@import "resets/meyer.scss";
+@import "base/meyer.scss";
 
 body {
   margin: 0;
@@ -8,6 +8,10 @@ body {
 @import "variables/colors.scss";
 
 @import "variables/fonts.scss";
+
+@import "variables/breakpoints.scss";
+
+@import "objects/o-btn.scss";
 
 @import "components/c-footer.scss";
 

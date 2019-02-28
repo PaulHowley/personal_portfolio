@@ -1,20 +1,8 @@
 .c-articles-btn {
-  display: flex;
-  max-width: 120px;
-  justify-content: center;
-  text-decoration: none;
   margin: 10px;
   padding: 10px;
-  font-size: 1.2em;
-  font-family: $link-font;
   background-color: lightgray;
-  color:  white;
   border: 1px solid gray;
-  cursor: pointer;
-  text-shadow: 1px 1px black;
-  box-shadow: 1px  1px gray;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
   &:hover {
     background-color: limegreen;
   }
