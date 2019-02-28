@@ -34,9 +34,7 @@ require 'rails_helper'
     end
 
     context 'edit article' do
-      let(:article) do
-        create(:article)
-      end
+      let(:article) { create(:article) }
       scenario "should be successful" do
         # Prepare
         visit edit_admin_article_path(article)
