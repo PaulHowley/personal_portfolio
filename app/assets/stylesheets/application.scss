@@ -1,9 +1,6 @@
-@import "base/meyer.scss";
+@import "resets/meyer.scss";
 
-body {
-  margin: 0;
-  padding: 0;
-} 
+@import "base/base.scss";
 
 @import "variables/colors.scss";
 
