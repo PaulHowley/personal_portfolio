@@ -1,0 +1,9 @@
+.c-projects-btn {
+  margin-top: 110px;
+  background-color: limegreen;
+  border: 2px solid white;
+  animation: shadow-pulse 3s 3;
+  &:hover {
+    background: none;
+  }
+}

@@ -1,0 +1,20 @@
+.c-nav {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  &__menu-item--link {
+    border: 1px solid gray;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    font-family: $link-font;
+    color: $link-text-color;
+    text-shadow: 1px 1px grey;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    &:hover {
+      background-color: $link-hover-color;
+    }
+  }
+}
