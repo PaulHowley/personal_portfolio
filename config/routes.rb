@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'contact', to: 'static_pages#contact'
   get 'projects', to: 'static_pages#projects'
 
+  get 'articles', to: 'articles#index'
+
   resources :articles, only: [:index, :show] do
     # resources :comments
   end
