@@ -2,7 +2,7 @@
   min-height: 100vh;
   min-width: 100%;
   text-align: center;
-  background: url(bg-mob.jpg) no-repeat center center;
+  background: image-url("bg-mob.jpg") no-repeat center center;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -10,6 +10,6 @@
 
 @media only screen and (min-width: $breakpoint-tablet) {
   .c-home__container { 
-    background: url(bg-desk.jpg) no-repeat center center;
+    background: image-url("bg-desk.jpg") no-repeat center center;
   }
 }
