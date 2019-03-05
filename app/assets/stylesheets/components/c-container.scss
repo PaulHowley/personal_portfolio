@@ -2,14 +2,5 @@
   min-height: 100vh;
   min-width: 100%;
   text-align: center;
-  background: image-url("bg-mob.jpg") no-repeat center center;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-}
-
-@media only screen and (min-width: $breakpoint-tablet) {
-  .c-container { 
-    background: image-url("bg-desk.jpg") no-repeat center center;
-  }
+  background-color: lightgray;
 }

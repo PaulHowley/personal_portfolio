@@ -1,8 +1,11 @@
 .c-nav {
   margin: 0;
+  width: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
+  background-color: $nav_and_footer;
   &__menu-item--link {
+    background-color: lightgray;
     border: 1px solid gray;
     border-radius: 2px;
     margin: 5px;
