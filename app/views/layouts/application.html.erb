@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <div class="<%= @home_page ? 'c-home__bg' : 'c-container'%>">
+    <div class="<%= static_bg(controller.action_name) %>">
       <%= render 'shared/nav'%>
       <%= yield %>
       <%= render 'shared/footer'%>
