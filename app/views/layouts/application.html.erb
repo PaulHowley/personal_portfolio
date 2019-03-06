@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <div class="c-container">
+    <div class="<%= @home_page ? 'c-home__bg' : 'c-container'%>">
       <%= render 'shared/nav'%>
       <%= yield %>
       <%= render 'shared/footer'%>

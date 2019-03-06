@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
-  layout "home", only: [:home]
+  
   def home
+    @home_page = true
   end
 
   def about
