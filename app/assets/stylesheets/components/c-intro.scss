@@ -4,10 +4,11 @@
   margin: 100px auto;
   &__text {
     justify-content: left;
-    font-size: 2em;
+    font-size: 1.2em;
     font-family: $main-text-font;
     margin-bottom: 10px;
     color: limegreen;
+    text-shadow: 1px 1px gray;
   }
   &__heading {
     font-size: 3em;
@@ -23,7 +24,7 @@
       font-size: 1.5em;
     }
     &__heading {
-      font-size: 4em;
+      font-size: 3.5em;
     }
   }
 }

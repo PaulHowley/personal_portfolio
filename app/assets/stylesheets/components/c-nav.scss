@@ -18,6 +18,7 @@
     transition-duration: 0.4s;
     &:hover {
       background-color: $link-hover-color;
+      color: white;
     }
   }
 }
