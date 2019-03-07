@@ -34,6 +34,7 @@ gem 'thor', '~> 0.19.1'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'foreman', '~> 0.85.0'
 
+gem 'gibbon', '~> 3.2'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
