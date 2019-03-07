@@ -1,4 +1,4 @@
-.c-home__container {
+.c-home__bg {
   min-height: 100vh;
   min-width: 100%;
   text-align: center;
@@ -9,7 +9,7 @@
 }
 
 @media only screen and (min-width: $breakpoint-tablet) {
-  .c-home__container { 
+  .c-home__bg { 
     background: image-url("bg-desk.jpg") no-repeat center center;
   }
 }

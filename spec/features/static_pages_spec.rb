@@ -5,7 +5,7 @@ RSpec.describe "Static pages", type: :feature do
   describe "Home page" do
 
     it "should have the content 'Personal Portfolio' " do
-      visit home_path
+      visit root_path
 
       expect(page).to have_content('Personal Portfolio')
     end
