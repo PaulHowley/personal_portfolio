@@ -1,0 +1,38 @@
+.c-signup__container {
+  font-family: $main-text-font;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.c-signup__header {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.c-signup__form {
+  padding-top: 5px;
+  
+}
+
+.c-signup__name {
+  margin-bottom: 20px;
+  font-size: 1em;
+  width: 200px;
+}
+
+.c-signup__email {
+  margin-bottom: 20px;
+  font-size: 1em;
+  width: 200px;
+}
+
+.c-signup__btn {
+  background-color: limegreen;
+  color: white;
+  width: 100%;
+  border: 1px solid white;
+  &:hover {
+    background-color: gray;
+  }
+}

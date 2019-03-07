@@ -1,15 +1,12 @@
-<div class="c-container">
-  <%= render 'shared/nav'%>
-  <main class="c-card__container">
-    <% @articles.each do |article| %>
-      <div class="c-card">
-        <%= image_tag("bg-4.jpg", alt: "Sample-img", class: "c-card__img") %>
-        <div class="c-card__text-holder">
-          <h3 class="c-card__title"><%= link_to article.title, article_path(article), class:"c-card__title--link" %></h3>
-          <p class="c-card__text"><%= article.text %></p>
-        </div>
+<main class="c-card__container">
+  <% @articles.each do |article| %>
+    <div class="c-card">
+      <%= image_tag("bg-4.jpg", alt: "Sample-img", class: "c-card__img") %>
+      <div class="c-card__text-holder">
+        <h3 class="c-card__title"><%= link_to article.title, article_path(article), class:"c-card__title--link" %></h3>
+        <p class="c-card__text"><%= article.text %></p>
       </div>
-    <% end %>
-  </main>
-  <%= render 'shared/footer'%>
-</div>
+    </div>
+  <% end %>
+</main>
+

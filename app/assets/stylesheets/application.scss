@@ -10,13 +10,13 @@
 
 @import "objects/o-btn.scss";
 
-@import "components/c-footer.scss";
-
 @import "components/c-nav.scss";
+
+@import "components/c-footer.scss";
 
 @import "components/c-projects-btn.scss";
 
-@import "components/c-home__container.scss";
+@import "components/c-home_bg.scss";
 
 @import "components/c-container.scss";
 
@@ -30,9 +30,11 @@
 
 @import "components/c-articles-btn.scss";
 
-@import "keyframes/shadow-pulse.scss";
+@import "components/c-signup.scss";
 
 @import "keyframes/shadow-pulse.scss";
+
+@import "keyframes/fadeInDown.scss";
 
 
 
