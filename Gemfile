@@ -35,6 +35,8 @@ gem 'thor', '~> 0.19.1'
 gem 'foreman', '~> 0.85.0'
 
 gem 'gibbon', '~> 3.2'
+
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -67,7 +69,7 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
-  
+  gem 'webmock', '~> 2.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
