@@ -2,9 +2,10 @@ require 'rails_helper'
 
   RSpec.feature "Articles", type: :feature do
     include AuthHelper
-      before(:each) do
-        http_login
-      end
+    before(:each) do
+      http_login
+      allow(SendEmailCampaign).to receive(:call)
+    end
 
     context 'create new article' do
       scenario "with valid data" do
