@@ -121,11 +121,12 @@ module MailchimpHelper
             \"method\": \"POST\"
           }
         ]
-      }", :headers => {})
+      }", 
+      :headers => {})
 
-      stub_request(:post, "https://us20.api.mailchimp.com/3.0/campaigns/61330ecf85/actions/send").
-         with(:body => "null",
-              :headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Authorization'=>'Basic YXBpa2V5OjQwNTY3MGE0ZjNjODNlMDk1NjY4ZGEwOTViZjRmNzQxLXVzMjA=', 'Content-Type'=>'application/json', 'User-Agent'=>'Faraday v0.15.4'}).
-         to_return(:status => 204, :body => "", :headers => {})
+    stub_request(:post, "https://us20.api.mailchimp.com/3.0/campaigns/61330ecf85/actions/send").
+      with(:body => "null",
+          :headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Authorization'=>'Basic YXBpa2V5OjQwNTY3MGE0ZjNjODNlMDk1NjY4ZGEwOTViZjRmNzQxLXVzMjA=', 'Content-Type'=>'application/json', 'User-Agent'=>'Faraday v0.15.4'}).
+      to_return(:status => 204, :body => "", :headers => {})
   end
 end

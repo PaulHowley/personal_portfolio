@@ -23,9 +23,9 @@ RSpec.describe Article, type: :model do
 
   describe "When creating an article" do
     it "should call SendEmailCampaign class" do
-      allow(SendEmailCampaign).to receive(:call)
       create(:article)
-      expect(SendEmailCampaign).to have_received(:call)
+
+      expect(SendEmailCampaignJob).to have_enqueued_sidekiq_job
     end
   end
 end

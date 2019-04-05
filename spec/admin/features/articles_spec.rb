@@ -4,7 +4,6 @@ require 'rails_helper'
     include AuthHelper
     before(:each) do
       http_login
-      allow(SendEmailCampaign).to receive(:call)
     end
 
     context 'create new article' do

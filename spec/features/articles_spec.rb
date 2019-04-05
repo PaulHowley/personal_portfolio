@@ -1,10 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe "articles", type: :feature do
-  before do
-    allow(SendEmailCampaign).to receive(:call)
-  end
-
   describe "View articles list" do
 
     it "should show the articles list" do

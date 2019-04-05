@@ -36,6 +36,7 @@ gem 'foreman', '~> 0.85.0'
 
 gem 'gibbon', '~> 3.2'
 
+gem 'sidekiq', '~> 5.0', '>= 5.0.5'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -51,7 +52,6 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.8'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
   gem 'factory_bot_rails', '~> 5.0'
   gem 'faker', '~> 1.9', '>= 1.9.1'
 end
@@ -68,8 +68,10 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '~> 3.141'
   gem 'webmock', '~> 2.1'
+  gem 'chromedriver-helper', '~> 2.1', '>= 2.1.1'
+  gem 'rspec-sidekiq', '~> 3.0', '>= 3.0.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
