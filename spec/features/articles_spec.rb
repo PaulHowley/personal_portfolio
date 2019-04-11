@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe "articles", type: :feature do
-
   describe "View articles list" do
 
     it "should show the articles list" do
