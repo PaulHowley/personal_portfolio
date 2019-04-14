@@ -24,11 +24,6 @@ RSpec.describe "articles", type: :feature do
       expect(page).to have_content(article.text)
     end
 
-    it "loads disqus", js: true do
-      visit article_path(article)
-
-      expect(page).to have_css('div[id="disqus_thread"]')
-    end
   end
 
 end
