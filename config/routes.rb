@@ -14,9 +14,10 @@ Rails.application.routes.draw do
   get 'about', to: 'static_pages#about'
   get 'contact', to: 'static_pages#contact'
   get 'projects', to: 'static_pages#projects'
+  get 'articles/index'
 
   resources :articles, only: [:index, :show] do
-    resources :comments, only: [:show, :create]
+    resources :comments
   end
 
   namespace :admin do

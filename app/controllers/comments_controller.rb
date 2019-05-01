@@ -1,15 +1,18 @@
 class CommentsController < ApplicationController
   def create
-    @comment = Comment.new(comment_params)
-    @comment.article_id = params[:article_id]
+    @article = Article.find(params[:article_id])
+    @comment = @article.comments.build(comment_params)
 
     if @comment.save
-      redirect_to article_comment_path(@comment.article), alert: 'You have successfully added a new comment!'
+      flash.notice = 'You have successfully added a new comment!'
+      redirect_to article_path(@article)
     else
-      render 'new'
+      render :new
     end
 
-    
+  end
+
+  def new
   end
  
   private
