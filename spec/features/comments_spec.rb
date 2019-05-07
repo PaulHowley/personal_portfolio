@@ -15,6 +15,19 @@ RSpec.describe "comments", type: :feature do
       expect(page).to have_content("Commenter text")
     end
   end
+
+  describe "ensuring a commenter and body is entered" do
+    let(:article) { create(:article) }
+  
+    it "should check that a commenter and body has been entered" do
+      visit article_path(article)
+  
+      click_button "Submit"
+
+      expect(page).to have_content("Commenter can't be blank Body can't be blank")
+    end
+  end
+
 end
 
   
