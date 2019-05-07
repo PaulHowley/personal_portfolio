@@ -3,11 +3,11 @@
 <%= render partial: 'shared/errors', locals: {obj: @comment} %>
 <%= form_for [@article, @comment] do |f| %>
   <p>
-    <%= f.label :commenter %><br/>
+    <%= f.label :commenter %>
     <%= f.text_field :commenter, required: :true %>
   </p>
   <p>
-    <%= f.label :body %><br/>
+    <%= f.label :body %>
     <%= f.text_area :body, required: :true %>
   </p>
   <p>
