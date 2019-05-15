@@ -1,0 +1,63 @@
+.c-comments-container {
+  padding: 5px;
+  margin: 5px;
+  font-family: $main-text-font;
+  text-align: left;
+
+  &__heading {
+    font-size: 1.5em;
+    padding: 5px;
+  }
+
+  &__commenter {
+    padding: 5px;
+  }
+
+  &__body {
+    padding: 5px;
+  }
+}
+
+
+.c-comments-form--container {
+  padding: 10px;
+  border-top: 1px solid grey;
+  background: lightgrey;
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-family: $main-text-font;
+
+  &__heading {
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.5em;
+  }
+}
+
+.c-comments--form {
+  padding: 10px;
+  margin: 10px;
+  background-color: lightgray;
+  border-top: 1px solid grey;
+  font-family: $main-text-font;
+  
+
+  &__commenter-textfield {
+    width: 90%;
+    height: 2em;
+    margin: 5px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+  }
+
+  &__body-textarea {
+    width: 90%;
+    height: 2em;
+    margin: 5px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+  }
+}

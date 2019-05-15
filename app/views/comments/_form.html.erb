@@ -1,16 +1,14 @@
-<h3>Post a Comment</h3>
+<div class="c-comments-form--container">
+  <div class="c-comments-form--container__heading">Post a Comment</div>
 
-<%= render partial: 'shared/errors', locals: {obj: @comment} %>
-<%= form_for [@article, @comment] do |f| %>
-  <p>
-    <%= f.label :commenter %>
-    <%= f.text_field :commenter, required: :true %>
-  </p>
-  <p>
-    <%= f.label :body %>
-    <%= f.text_area :body, required: :true %>
-  </p>
-  <p>
-    <%= f.submit 'Submit' %>
-  </p>
-<% end %>
+  <%= render partial: 'shared/errors', locals: {obj: @comment} %>
+  <%= form_for [@article, @comment], class: "c-comments--form" do |f| %>
+    
+      <%= f.text_field :commenter, required: :true, class: "c-comments--form__commenter-textfield", placeholder: "Name..." %> <br>
+    
+      <%= f.text_area :body, required: :true, class: "c-comments--form__body-textarea", placeholder: "Comment..." %>
+
+      <%= f.submit "Submit", class: "o-btn c-comment__btn" %>
+    
+  <% end %>
+</div>

@@ -1,0 +1,12 @@
+.c-comment__btn {
+  margin: 5px;
+  padding: 5px;
+  background-color: black;
+  border: 1px solid gray;
+  border-radius: 8px;
+  color: white;
+  width: 90%;
+  &:hover {
+    background-color: limegreen;
+  }
+}

@@ -5,11 +5,14 @@
   <h2 class="c-article-container__title "><%= @article.title %></h2>
   <p class="c-article-container__text"><%= @article.text %></p>
 </div>
-<h3>Comments</h3>
-  <% @article.comments.each do |comment| %>
-    <h3 ><%= comment.commenter %></h3>
-    <h3 ><%= comment.body %></h3>
-  <% end %>
+<div class="c-comments-container">
+  <div class="c-comments-container__heading">Comments</div>
+    <% @article.comments.each do |comment| %>
+      <div class="c-comments-container__commenter"><h3 ><%= comment.commenter %></h3></div>
+      <div class="c-comments-container__body"><h3 ><%= comment.body %></h3></div>
+    <% end %>
+  </div>
+</div>
 
 <%= render partial: 'comments/form' %>
 
