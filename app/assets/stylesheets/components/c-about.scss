@@ -1,0 +1,84 @@
+.c-about {
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.c-about-profile {
+  text-align: center;
+  &__img {
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 20px;
+   }
+  &__header {
+    padding: 5px;
+    font-family: $main-text-font;
+    font-size: 2em;
+  }
+  &__text {
+    padding: 5px;
+    font-family: $main-text-font;
+    color: $dark_grey;
+    text-align: justify;
+    margin: 10px;
+  }
+}
+
+.c-about-languages {
+  text-align: center;
+  background-color: white;
+  border-top: 1px solid $dark_grey;
+  border-bottom: 2px solid $dark_grey;
+  &__title {
+    font-family: $main-text-font;
+    font-size: 1.5em;
+    margin: 10px;
+    color: $dark_grey;
+  }
+  &__icon {
+    height: 30px;
+  }
+}
+
+.c-about-languages__table, td {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.c-about-languages__td {
+  padding: 5px;
+  text-align: left;
+  &--text {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    padding: 5px;
+    font-family: $main-text-font;
+    color: $dark_grey;
+  }
+}
+
+
+.c-about-skills {
+  background-color: $light_grey;
+  text-align: center;
+  &__title {
+    font-family: $main-text-font;
+    font-size: 1.5em;
+    margin: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  &__list {
+    color: white;
+    padding: 5px;
+    font-family: $main-text-font;
+  }
+  &__list li {
+    padding: 5px;
+  }
+}
+
+
+

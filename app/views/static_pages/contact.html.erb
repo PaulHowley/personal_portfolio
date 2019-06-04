@@ -1,3 +1,16 @@
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<div class="c-contact">
+  <%= image_tag("bg-desk.jpg", alt: "web_dev-img", class: "c-contact__img" )%>
+  <form class="c-contact-form">
+    <fieldset class="c-contact-form__fieldset">
+      <legend class="c-contact-form__legend">Contact Me</legend>
+      <label for="name" class="c-contact-form__label">Name:</label>
+      <input type="text" name="name" class="c-contact-form__input" placeholder="Your Name">
+      <label for="email" class="c-contact-form__label">Email:</label>
+      <input type="text" name="email" class="c-contact-form__input" placeholder="Your e-mail address">
+      <label for="body" class="c-contact-form__label">Your Message:</label>
+      <textarea name="body" rows="19" class="c-contact-form__input c-contact-form__textarea placeholder="Please type your message"></textarea>
+      <button type="submit" class="c-contact-form__btn">SUBMIT</button>
+    </fieldset>
+  </form>
+</div>
 

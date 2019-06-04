@@ -1,33 +1,35 @@
-.c-intro {
-  max-width: 200px;
-  text-align: left;
-  margin: 100px auto;
-  &__text {
-    justify-content: left;
-    font-size: 1.2em;
-    font-family: $main-text-font;
-    margin-bottom: 10px;
-    color: limegreen;
-    text-shadow: 1px 1px gray;
-  }
-  &__heading {
-    font-size: 3em;
-    font-family: $main-text-font;
-    color: gray;
-  }
+.c-intro__container {
+  background-image: url("bg-desk.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  height: 1000px;
+  margin: 0;
+  text-align: center;
 }
 
+.c-intro {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  color: white;
+  margin-top: 100px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.u-green {
+  color: rgb(32, 173, 30);
+}
 @media only screen and (min-width: $breakpoint-tablet) {
   .c-intro {
+    text-align: left;
     margin-left: 100px;
-    &__text {
-      font-size: 1.5em;
-    }
-    &__heading {
-      font-size: 3.5em;
-    }
   }
 }
-
-
+@media only screen and (max-width: $breakpoint-tablet) {
+  .c-intro__container  { 
+    background-image: url("bg-mob.jpg");
+    background-repeat: no-repeat;
+    background-position:  center;
+  }
+}
 
