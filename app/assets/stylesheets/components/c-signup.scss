@@ -25,7 +25,6 @@
 }
 
 .c-signup__email {
-  margin-bottom: 10px;
   padding-left: 5px;
   font-size: 1em;
   width: 200px;
@@ -42,10 +41,11 @@
   font-family: $main-text-font;
   font-size: 1em;
   color: white;
-  height: 36px;
+  height: 40px;
   border: 1px solid white;
+  cursor: pointer;
 }
 .c-signup__btn:hover {
-    background-color: $light_grey;
+    background-color: $dark_grey;
     color: $green;
   }

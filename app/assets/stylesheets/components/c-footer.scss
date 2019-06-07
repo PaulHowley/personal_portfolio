@@ -2,15 +2,6 @@
   background-color: $dark_grey;
   padding: 5px;
   width: 100vw;
-  &__social-link {
-    font-size: 2em;
-    color: $green;
-    margin: 5px;
-    float: right;
-  }
-  &__social-link:hover {
-    color: white;
-  }
   &__copyright {
     margin-top: 20px;
     margin-left: 15px;

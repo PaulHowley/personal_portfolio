@@ -70,6 +70,11 @@
     color: white;
     text-shadow: 2px 2px 4px #000000;
   }
+  &__list-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+  }
   &__list {
     color: white;
     padding: 5px;

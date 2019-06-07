@@ -49,9 +49,10 @@
     width: 100px;
     border: 1px solid white;
     margin-top: 10px;
+    cursor: pointer;
   }
   &__btn:hover {
-    background-color: $light_grey;
+    background-color: $dark_grey;
     color: $green;
   }
 }
