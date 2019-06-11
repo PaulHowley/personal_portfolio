@@ -1,48 +1,9 @@
-.c-comments-container {
-  margin: 5px;
-  font-family: $main-text-font;
-  text-align: left;
-}
-
 .c-comments__heading {
   font-size: 1.5em;
   font-family: $main-text-font;
   color: $light-grey;
   padding-top: 2px;
   padding-bottom: 4px;
-}
-
-.c-comment-box {
-  border: 1px solid $dark-grey;
-  background-color: lightgray;
-  margin-bottom: 10px;
-  padding: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  &__commenter {
-    font-size: 1.1em;
-    font-family: $main-text-font;
-    margin-bottom: 5px;
-    color: white;
-  }
-  &__body {
-    font-size: .8em;
-    font-family: $main-text-font;
-    color: $dark-grey;
-  }
-}
-
-.c-comments-form--container {
-  margin: 20px;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  display: block;
-  text-align: left;
-  font-family: $main-text-font;
-  &__heading {
-    margin-bottom: 5px;
-    font-size: 1.5em;
-  }
 }
 
 .c-comments--form {

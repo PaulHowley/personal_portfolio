@@ -16,6 +16,12 @@
 
 @import "components/c-about.scss";
 
+@import "components/c-about-profile.scss";
+
+@import "components/c-about-languages.scss";
+
+@import "components/c-about-skills.scss";
+
 @import "components/c-projects-btn.scss";
 
 @import "components/c-container.scss";
@@ -26,9 +32,15 @@
 
 @import "components/c-article.scss";
 
+@import "components/c-article-container.scss";
+
 @import "components/c-comments.scss";
 
-@import "components/c-comment-btn.scss";
+@import "components/c-comments-container.scss";
+
+@import "components/c-comments-form--container.scss";
+
+@import "components/c-comment-box.scss";
 
 @import "components/c-contact.scss";
 

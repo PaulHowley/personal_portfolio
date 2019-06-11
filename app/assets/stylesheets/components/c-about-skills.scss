@@ -1,0 +1,24 @@
+.c-about-skills {
+  background-color: $light_grey;
+  text-align: center;
+  &__title {
+    font-family: $main-text-font;
+    font-size: 1.5em;
+    margin: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  &__list-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+  &__list {
+    color: white;
+    padding: 5px;
+    font-family: $main-text-font;
+  }
+  &__list li {
+    padding: 5px;
+  }
+}
