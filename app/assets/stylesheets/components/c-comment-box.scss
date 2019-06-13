@@ -1,0 +1,18 @@
+.c-comment-box {
+  border: 1px solid $dark-grey;
+  background-color: lightgray;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  &__commenter {
+    font-size: 1.1em;
+    font-family: $main-text-font;
+    margin-bottom: 5px;
+    color: white;
+  }
+  &__body {
+    font-size: .8em;
+    font-family: $main-text-font;
+    color: $dark-grey;
+  }
+}

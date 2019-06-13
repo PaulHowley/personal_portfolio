@@ -1,3 +1,59 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<div class="c-about">
+  <div class="c-about-profile">
+    <%= image_tag("mypic.png", alt: "my pic", class: "c-about-profile__img") %>
+    <h1 class="c-about-profile__header">Hi I'm Paul Howley. Web Developer.  Welcome to my Website.</h1>
+    <p class="c-about-profile__text">I have had a slightly varied career profile so far.  After completing  my degree at Hull University I went straight into a job as a trainee insurance broker.  My career developed with increasing experience up to the point of being an Appointed Representative for Aon.  Having become familiar with selling on Ebay I took the brave decision to leave Aon and start my own business selling on Ebay and Amazon full time.  Then the opportunity to work with my two brothers arose and we started our own haulage company. Unfortunately trading conditions deteriorated and we had to close the business.</p>
+    <p class="c-about-profile__text">I then had to work out what do for the rest of my working life.  During my time selling online I had dabbled in HTML and CSS with my own Ebay listings.  This is something I enjoyed and felt would be the sort of area I could work in full time.  I started going over the basics with some self tutoring but felt I needed a more commercially oriented approach to give myself the best chance of success.  That’s when I came across the ProCoders web development course in Leeds. Backed by a major eCommerce business this looked like the ideal course to  gain real world development experience first hand.  With a limited number of applicants being taken on I was thankful to have been successfully accepted on the course starting in January 2019.</p> 
+    <p class="c-about-profile__text">Up to now I have devoted my efforts on the Procoders course pretty much full time.  I have found the course content to be both taxing but rewarding at the same time. Below are a number of coding languages and skills that I have learnt or experienced so far....</p>
+  </div>
+  <div class="c-about-languages">
+    <h2 class="c-about-languages__title">Languages & Frameworks</h2>
+    <table class="c-about-languages__table">
+      <tr>
+        <td class="c-about-languages__td"><%= image_tag("html_icon.png", alt: "html", class: "c-about-languages__icon") %></td>
+        <td class="c-about-languages__td"><p class="c-about-languages__td--text"> -- HTML</p></td>
+        <td class="c-about-languages__td"><%= image_tag("bs_icon.png", alt: "bootstrap", class: "c-about-languages__icon") %></td>
+        <td class="c-about-languages__td"><p class="c-about-languages__td--text"> -- BOOTSTRAP</p></td>
+      </tr>
+      <tr>
+        <td class="c-about-languages__td"><%= image_tag("css_icon.png", alt: "css", class: "c-about-languages__icon") %></td>
+        <td class="c-about-languages__td"><p class="c-about-languages__td--text"> -- CSS</p></td>
+        <td class="c-about-languages__td"><%= image_tag("ruby.png", alt: "ruby", class: "c-about-languages__icon") %></td>
+        <td class="c-about-languages__td"><p class="c-about-languages__td--text"> -- RUBY</p></td>
+      </tr>
+      <tr>
+        <td class="c-about-languages__td"><%= image_tag("js_icon.png", alt: "javascript", class: "c-about-languages__icon") %></td>
+        <td class="c-about-languages__td"><p class="c-about-languages__td--text"> -- JAVASCRIPT</p></td>
+        <td class="c-about-languages__td"><%= image_tag("Ruby_On_Rails_Logo.svg.png", alt: "rails", class: "c-about-languages__icon") %></td>
+        <td class="c-about-languages__td"><p class="c-about-languages__td--text"> -- RUBY ON RAILS</p></td>
+      </tr>
+    </table>
+  </div>
+  <div class="c-about-skills">
+    <h2 class="c-about-skills__title">Other Skills</h2>
+    <div class="c-about-skills__list-container">
+      <ul class="c-about-skills__list">
+        <li>Git & GitHub</li>
+        <li>Command Line</li>
+        <li>VS Code</li>
+        <li>Google Chrome Developer Tool</li>
+        <li>BEM</li>
+      </ul>
+      <ul class="c-about-skills__list">
+        <li>Mobile First Design</li>
+        <li>REST & CRUD</li>
+        <li>Service Classes</li>
+        <li>Background workers</li>
+        <li>Use of external API’s</li>
+      </ul>
+      <ul class="c-about-skills__list">
+        <li>Test Driven Development</li>
+        <li>Rspec Testing</li>
+        <li>SCSS and Sass</li>
+        <li>Heroku</li>
+        <li>Codeship</li>
+      </ul>
+    </div>
+  </div>
+</div>
 

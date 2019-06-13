@@ -1,0 +1,66 @@
+.c-navbar  {
+  width: 100vw;
+  background-color: $light_grey;
+  overflow: hidden;
+  padding: 5px;
+  &__link {
+    float: left;
+    font-family: $main-text-font;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-right: 10px;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.active {
+  color: $green;
+}
+.c-navbar__burger-link {
+  display: none;
+}
+.c-navbar__burger-icon {
+  height: 40px;
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  .c-navbar  a:not(:first-child) {
+    display: none;
+  }
+  .c-navbar  a.c-navbar__burger-link {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+  }
+  
+  .c-navbar.responsive {
+    position: relative;
+    background-color: $dark_grey;
+  }
+  .c-navbar.responsive .c-navbar__burger-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .c-navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    color: white;
+  }
+  .c-navbar.responsive .active {
+    color: $green;
+  }
+  .c-navbar.responsive a:hover {
+    color: $green;
+  }
+}

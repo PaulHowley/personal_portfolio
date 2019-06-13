@@ -1,24 +1,21 @@
-<div class="c-img-holder">
-  <%= image_tag("bg-desk.jpg", alt: "article-img", class: "c-img-holder__img" )%>
-</div>
 <div class="c-article-container">
+  <%= image_tag("bg-desk.jpg", alt: "article-img", class: "c-article__img")%>
   <h2 class="c-article-container__title "><%= @article.title %></h2>
   <p class="c-article-container__text"><%= @article.text %></p>
+  <div class="c-comments-container">
+    <div class="c-comments__heading">Comments</div>
+      <% @article.comments.each do |comment| %>
+        <div class="c-comment-box">
+          <h3 class="c-comment-box__commenter"><%= comment.commenter %></h3>
+          <p class="c-comment-box__body" ><%= comment.body %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <%= render partial: 'comments/form' %>
 </div>
-<%= link_to 'Articles list', articles_path, class: "o-btn c-articles-btn" %>
-
-<p><strong>Commenter:</strong><%= comment.commenter %></p>
-
-<p><strong>Comment:</strong><%= comment.body %></p>
 
 
-<h2>Comments</h2>
-<%= render @article.comments %>
-
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
-
-<br>
 
 
 

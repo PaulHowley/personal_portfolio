@@ -1,7 +1,14 @@
-<nav class="c-nav">
-  <%= link_to "Home", root_path, class: "c-nav__menu-item--link" %>
-  <%= link_to "About", about_path, class: "c-nav__menu-item--link" %>
-  <%= link_to "Articles", articles_path, class: "c-nav__menu-item--link" %>
-  <%= link_to "Projects", projects_path, class: "c-nav__menu-item--link" %>
-  <%= link_to "Contact", contact_path, class: "c-nav__menu-item--link" %>    
-</nav>
+<header class="c-nav">
+  <nav class="c-navbar" id="burgerNav">
+    <%= link_to "HOME", root_path, class: "c-navbar__link" %>
+    <%= link_to "ABOUT", about_path, class: "c-navbar__link" %>
+    <%= link_to "ARTICLES", articles_path, class: "c-navbar__link" %>
+    <%= link_to "PROJECTS", projects_path, class: "c-navbar__link" %>
+    <%= link_to "CONTACT", contact_path, class: "c-navbar__link" %> 
+    <a href="javascript:void(0);" class="c-navbar__burger-link" onclick="burgerMenu()">
+      <%= image_tag("burger_menu_icon.png", alt: "menu", class: "c-navbar__burger-icon") %></a>
+  </nav> 
+</header>
+
+       
+      

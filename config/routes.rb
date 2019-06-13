@@ -14,14 +14,16 @@ Rails.application.routes.draw do
   get 'about', to: 'static_pages#about'
   get 'contact', to: 'static_pages#contact'
   get 'projects', to: 'static_pages#projects'
+  
 
   resources :articles, only: [:index, :show] do
-    # resources :comments
+    resources :comments, only: [:create, :new]
   end
 
   namespace :admin do
     root 'articles#index'
     resources :articles
+    resources :comments, only: [:destroy]
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

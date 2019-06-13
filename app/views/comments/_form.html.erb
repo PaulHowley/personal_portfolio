@@ -1,0 +1,14 @@
+<div class="c-comments-form--container">
+  <h1 class="c-comments-form--container__heading">Post a Comment</h1>
+
+  <%= render partial: 'shared/errors', locals: {obj: @comment} %>
+  <%= form_for [@article, @comment], class: "c-comments--form" do |f| %>
+    
+      <%= f.text_field :commenter, required: :true, class: "c-comments--form__commenter-textfield", placeholder: "Name..." %>
+    
+      <%= f.text_area :body, required: :true, class: "c-comments--form__body-textarea", placeholder: "Comment..." %> <br>
+
+      <%= f.submit "SUBMIT", class: "o-btn c-comment__btn" %>
+    
+  <% end %>
+</div>

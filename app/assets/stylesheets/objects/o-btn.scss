@@ -1,16 +1,19 @@
 .o-btn {
-  display: flex;
-  border-radius: 2px;
   width: 120px;
   justify-content: center;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 5px;
   font-size: 1.2em;
-  font-family: $link-font;
-  color:  lightgray;
+  font-family: $main-text-font;
+  height: 40px;
+  color: white;
+  background-color: $green;
+  border: none;
   cursor: pointer;
-  text-shadow: 1px 1px gray;
-  box-shadow: 1px  1px gray;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+  &:hover {
+    background-color: $dark-grey;
+    color: $green;
+  }
 }

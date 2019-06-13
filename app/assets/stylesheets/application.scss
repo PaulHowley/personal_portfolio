@@ -10,13 +10,19 @@
 
 @import "objects/o-btn.scss";
 
-@import "components/c-nav.scss";
+@import "components/c-navbar.scss";
 
 @import "components/c-footer.scss";
 
-@import "components/c-projects-btn.scss";
+@import "components/c-about.scss";
 
-@import "components/c-home_bg.scss";
+@import "components/c-about-profile.scss";
+
+@import "components/c-about-languages.scss";
+
+@import "components/c-about-skills.scss";
+
+@import "components/c-projects-btn.scss";
 
 @import "components/c-container.scss";
 
@@ -24,9 +30,23 @@
 
 @import "components/c-card.scss";
 
-@import "components/c-img-holder.scss";
-
 @import "components/c-article.scss";
+
+@import "components/c-article-container.scss";
+
+@import "components/c-comment.scss";
+
+@import "components/c-comments.scss";
+
+@import "components/c-comments-container.scss";
+
+@import "components/c-comments-form--container.scss";
+
+@import "components/c-comment-box.scss";
+
+@import "components/c-contact.scss";
+
+@import "components/c-contact-form.scss";
 
 @import "components/c-articles-btn.scss";
 
