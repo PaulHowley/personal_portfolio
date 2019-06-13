@@ -10,56 +10,7 @@
   }
 }
 
-.c-contact-form {
-  text-align: left;
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: $light_grey;
-  &__fieldset {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  &__legend {
-    font-size: 1.5em;
-    text-align: left;
-    padding: 5px 0;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-  }
-  &__label {
-    font-size: 1.2em;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-  }
-  &__input {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 1em;
-  }
-  &__btn {
-    background-color: $green;
-    font-family: $main-text-font;
-    font-size: 1em;
-    color: white;
-    height: 36px;
-    width: 100px;
-    border: 1px solid white;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  &__btn:hover {
-    background-color: $dark_grey;
-    color: $green;
-  }
-}
 
-.c-contact-form__textarea {
-  height: 120px;
-}
 
 
 

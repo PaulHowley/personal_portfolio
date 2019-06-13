@@ -1,5 +1,5 @@
 <div class="c-comments-form--container">
-  <div class="c-comments-form--container__heading">Post a Comment</div>
+  <h1 class="c-comments-form--container__heading">Post a Comment</h1>
 
   <%= render partial: 'shared/errors', locals: {obj: @comment} %>
   <%= form_for [@article, @comment], class: "c-comments--form" do |f| %>
