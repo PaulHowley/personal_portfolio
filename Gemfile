@@ -36,7 +36,7 @@ gem 'foreman', '~> 0.85.0'
 
 gem 'gibbon', '~> 3.2'
 
-gem 'sidekiq', '~> 5.0', '>= 5.0.5'
+gem 'sidekiq', '~> 6.4'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
